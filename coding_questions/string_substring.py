@@ -6,7 +6,7 @@ def substring_finder(s, subs):
 
     for i in range(n - m + 1):
 
-        match = True
+        match = True  #Assume it matches unless proven otherwise
 
         for j in range(m):
 
@@ -50,6 +50,6 @@ def contains_substring1(string, substring):
 
 string = "Hello World"
 
-print(contains_substring(string, "Hello"))
-print(contains_substring(string, "World"))
+print(contains_substring1(string, "Hello"))
+print(contains_substring1(string, " World"))
 
