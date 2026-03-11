@@ -19,3 +19,7 @@ def remove_target(main, target):
 
 
 print(remove_target("communications", "com"))
+
+# pythonic way
+def remove_target1(main: str, target: str) -> str:
+    return main.replace(target, "")
