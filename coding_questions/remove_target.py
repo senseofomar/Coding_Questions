@@ -1,19 +1,21 @@
-def remove_target(main:str, target: str)->str:
-    return main - target
+# best for interviews
+def remove_target(main, target):
 
+    n = len(main)
+    m = len(target)
 
-
-def remove_target1(main, target)->str:
     result = ""
-    for m in main:
-        for t in target:
-            if m != t:
-                result += m
-            else:
-                continue
+    i = 0
+
+    while i < n:
+
+        if main[i:i+m] == target:
+            i += m
+        else:
+            result += main[i]
+            i += 1
+
     return result
 
-print(remove_target1("communications", "com"))
 
-
-wrong code above
+print(remove_target("communications", "com"))

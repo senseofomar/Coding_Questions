@@ -1,4 +1,3 @@
-
 def new_string(s1: str, s2: str) -> str:
     result = ""
     for i, ch in enumerate(s2):
