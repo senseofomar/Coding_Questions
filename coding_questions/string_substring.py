@@ -42,6 +42,13 @@ string = "Hello World"
 print(contains_substring(string, "Hello"))
 print(contains_substring(string, "World"))
 
+# pythonic way
+def contains_substring1(string, substring):
+    return substring in string
 
 
+string = "Hello World"
+
+print(contains_substring1(string, "Hello"))
+print(contains_substring1(string, " World"))
 
