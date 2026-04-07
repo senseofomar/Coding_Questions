@@ -11,7 +11,7 @@ N = 5
 
 print(find_missing_sum(arr, N))
 
-def find_missing_xor(arr, N):
+def find_missing_xor(arr, n):
 
     xor_all = 0
     xor_arr = 0
@@ -27,7 +27,7 @@ def find_missing_xor(arr, N):
     return missing
 
 
-arr = [1,2,4,5]
+array = [1,2,4,5]
 N = 5
 
-print(find_missing_xor(arr, N))
+print(find_missing_xor(array, N))
