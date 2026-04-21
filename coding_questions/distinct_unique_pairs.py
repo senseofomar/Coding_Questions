@@ -1,5 +1,3 @@
-from inspect import currentframe
-
 
 def distinct_unique_pairs(arr, target)->int:
     res = 0
