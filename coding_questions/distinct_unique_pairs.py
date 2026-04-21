@@ -1,4 +1,3 @@
-
 def distinct_unique_pairs(arr, target)->int:
     res = 0
     seen = {}
