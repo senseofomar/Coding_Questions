@@ -21,6 +21,20 @@ if __name__=="__main__":
 
 
 
+def unique_pairs(lst:list[int], target)-> int:
+    res = 0
+    seen ={}
+    for i in range(len(lst)):
+        num = lst[i]
+        need = target - num
+        if need == num:
+            if seen.get(num, 0) ==1:
+                res+= 1
+
+        elif seen.get(need, 0) > 0 and seen.get(num, 0) ==0:
+            res+=1
+        seen[num] = seen.get(num, 0) +1
+    return res
 
 """
 case 1 - when current == complement
