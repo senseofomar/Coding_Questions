@@ -19,8 +19,6 @@ if __name__=="__main__":
     print(distinct_unique_pairs(arr1, target1))
 
 
-
-
 def unique_pairs(lst:list[int], target)-> int:
     res = 0
     seen ={}
